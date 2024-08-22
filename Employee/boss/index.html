@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Creation Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h2>Create New Assignment</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="task-title">Task Title:</label>
+                    <input type="text" id="task-title" class="form-control" placeholder="Enter task title...">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" class="form-control" rows="4" placeholder="Enter task description..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="due-date">Due Date:</label>
+                    <input type="date" id="due-date" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="assignees">Assign to:</label>
+                    <input type="text" id="assignees" class="form-control" placeholder="Enter employee names or IDs...">
+                </div>
+
+                <button id="assign-btn" class="btn btn-success btn-block">
+                    <i class="fas fa-plus"></i> Assign Task
+                </button>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div id="notification" class="alert alert-success" role="alert" style="display: none;">
+            Assignment created successfully!
+        </div>
+    </div>
+
+    <script src="assignment-script.js"></script>
+</body>
+</html>
