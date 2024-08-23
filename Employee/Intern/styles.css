@@ -106,3 +106,23 @@ body {
     padding: 5px 10px;
     font-size: 0.85rem;
 }
+
+
+/* Styling for the class "mehub" */
+.mehub {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#mehub {
+    background-color: #ffcc00;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+}
